@@ -1,0 +1,275 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+.Profile {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the container takes the full viewport height */
+
+  
+  @media screen and (max-width: 900px) {
+    #home, #about, #service {
+      display: none;
+    }
+    .mid{
+      flex-direction: column;
+    }
+    img {
+      flex-wrap: wrap;
+    }
+    
+  }
+  .mid {
+    display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1; /* Make it grow to fill available space */
+  text-align: center;
+  //gap: 200px;
+
+    .text {
+      font-size: 20px;
+
+    }
+    
+    .cards {
+      height: 200px;
+      width: 300px;
+      background: whitesmoke;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      
+    }
+    .cards:hover{
+      transform: scale(1.1);
+    }
+
+  }
+
+  
+}
+
+
+ .Service {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+ 
+  .navbar {
+    height: 70px;
+    width: 100%;
+    background: #333333;
+    color: aliceblue;
+    display: flex;
+    justify-content: flex-end; /* Push the list to the right */
+    align-items: center;
+
+    .list {
+      display: flex;
+      list-style: none;
+      gap: 20px; /* Add space between items */
+     
+    }
+    .list li a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    #home, #about, #service {
+      display: none;
+    }
+    .mid{
+      flex-direction: column;
+    }
+    img {
+      flex-wrap: wrap;
+    }
+    
+  }
+
+  .ser {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #0000001a;
+    padding: 20px;
+    flex: 1;
+  }
+  .ser h1.title {
+    color: red;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .ser ul.list {
+    list-style: none;
+    padding: 0;
+  }
+  .ser ul.list .item {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px #0000001a;
+    margin: 10px 0;
+    padding: 15px;
+    transition: transform .2s, box-shadow .2s;
+  }
+  .ser ul.list .item:hover {
+    box-shadow: 0 4px 8px #0003;
+    transform: translateY(-5px);
+  }
+  .ser ul.list .item h3.name {
+    color: red;
+    margin: 0;
+  }
+  span {
+    translate: none;
+    rotate: none;
+    scale: none;
+    transform: translate(0px, 0px);
+  }
+  .item .service-item-letter {
+    display: inline-block;
+  }
+
+
+
+  footer{
+    display: flex;
+    //justify-content: flex-end;
+    //align-items: flex-end;
+    //padding: 10px;
+
+  .foot {
+    height: 150px;
+    width: 100%;
+    background: #333333;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    //align-content: center;
+
+    // .box1 {
+      
+
+    // }
+    // .box2 {
+
+    // }
+
+  }
+}
+}
+
+.About {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+ 
+  .navbar {
+    height: 70px;
+    width: 100%;
+    background: #333333;
+    color: aliceblue;
+    display: flex;
+    justify-content: flex-end; /* Push the list to the right */
+    align-items: center;
+
+    .list {
+      display: flex;
+      list-style: none;
+      gap: 20px; /* Add space between items */
+     
+    }
+    .list li a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    #home, #about, #service {
+      display: none;
+    }
+    .mid{
+      flex-direction: column;
+    }
+    img {
+      flex-wrap: wrap;
+    }
+    
+  }
+  .skill-container {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+  }
+  .skill-container .title {
+    text-align: left;
+  }
+  .skill-container .skill-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  .skill-container .skill-item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .skill-container .skill-name {
+    font-weight: 700;
+    text-align: left;
+  }
+  .skill-container .bar {
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+  }
+  .skill-container .process {
+    background-color: #4caf50;
+    color: #fff;
+    height: 100%;
+    transition: width 2s ease-in-out;
+    width: 0;
+  }
+  
+
+
+  footer{
+    display: flex;
+    //justify-content: flex-end;
+    //align-items: flex-end;
+    //padding: 10px;
+
+  .foot {
+    height: 150px;
+    width: 100%;
+    background: #333333;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    //align-content: center;
+
+    // .box1 {
+      
+
+    // }
+    // .box2 {
+
+    // }
+
+  }
+}
+}

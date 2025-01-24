@@ -1,0 +1,42 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.app {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    height: 450px;
+    text-align: center; /* Center-align all navbar elements */
+  }
+  
+  .pix {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .image-container {
+    flex: 1 1 calc(25% - 15px);
+    max-width: calc(25% - 15px);
+    box-sizing: border-box;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  .search-input::placeholder {
+    color: #fff; /* White placeholder color */
+  }

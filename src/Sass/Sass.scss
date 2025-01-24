@@ -1,0 +1,107 @@
+@mixin flexProperty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.Sass {
+    height: 100vh;
+    width: 100%;
+    @include flexProperty();
+   
+  
+    .Cards {
+      height: 500px;
+      width: 300px;
+      background: whitesmoke;
+      box-shadow: 0 0 30px black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+    
+  
+    
+      img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 10px solid white;
+      }
+      .Image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .Title {
+        font-size: 24px;
+        text-align: center;
+        color: black;
+        padding: 10px;
+      }
+  
+      .Logos {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+
+        #face {
+          color: blue;
+        }
+        #x {
+          color: skyblue;
+        }
+        #insta {
+          color: red;
+        }
+        #link {
+          color: skyblue;
+        }
+  
+        i {
+          font-size: 20px;
+          //color: black;
+          cursor: pointer;
+          transition: transform 0.3s;
+          .fa-brands fa-facebook {
+            color: blue;
+          }
+  
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+      .but {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+      .msg {
+        box-shadow: 0 0 10px black;
+// display:flex ;
+// justify-content: space-around;
+// align-items: center;
+
+      }
+      .sub{
+        box-shadow: 0 0 10px black;
+// display:flex ;
+// justify-content: space-around;
+// gap: 10px;
+// align-items: center;
+      }
+    }
+    .like {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+}

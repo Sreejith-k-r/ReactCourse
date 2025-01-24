@@ -1,0 +1,79 @@
+.navbar {
+    height: 70px;
+    width: 100%;
+    background: #333333;
+    color: aliceblue;
+    display: flex;
+    justify-content: flex-end; /* Push the list to the right */
+    align-items: center;
+
+    .list {
+      display: flex;
+      list-style: none;
+      gap: 20px; /* Add space between items */
+     
+    }
+    #sree{
+      position:absolute;
+      margin-left: -1500px;
+    }
+    .list li a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      #bar{
+        display: none;
+      }
+    }
+    @media screen and (max-width: 900px) {
+        #home, #about, #service {
+          display: none;
+        }
+        .list li a #bar {
+            display: block;
+        }
+        
+      }
+    
+  }
+
+
+  //footer
+
+  footer{
+    display: flex;
+    //justify-content: flex-end;
+    //align-items: flex-end;
+    //padding: 10px;
+
+  .foot {
+    height: auto;
+    width: 100%;
+    background: #333333;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    //align-content: center;
+
+    .box1 {
+        li{
+            list-style: none;
+        }
+      li a {
+        color: white;
+        text-decoration: none;
+      }
+      
+
+    }
+    .box2 {
+        p a {
+    text-decoration: none;
+    color: white;
+    }
+
+    }
+
+  }
+}
